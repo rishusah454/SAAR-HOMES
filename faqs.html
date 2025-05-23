@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAARHOMES - FAQs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px 20px;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .faq-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .faq-question:hover {
+      background-color: #e0e0e0;
+    }
+    .faq-answer {
+      display: none;
+      padding: 15px;
+      background-color: #fafafa;
+      border-left: 4px solid #4CAF50;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const questions = document.querySelectorAll('.faq-question');
+      questions.forEach(q => {
+        q.addEventListener('click', () => {
+          const answer = q.nextElementSibling;
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+<div class="faq-container">
+  <h2>❓ Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-question">What types of properties are listed on SAARHOMES?</div>
+    <div class="faq-answer">We list rooms for rent, apartments, and houses for sale across the Kathmandu Valley — including Kathmandu, Lalitpur, and Bhaktapur.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Is there a fee for using SAARHOMES?</div>
+    <div class="faq-answer">Browsing properties is free. We may charge a small service fee for property visits, deals, or legal documentation support depending on the service.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Can I list my own property on SAARHOMES?</div>
+    <div class="faq-answer">Yes! Property owners can list their rooms or houses by contacting us directly or submitting through the "List Your Property" section on our website.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How often are listings updated?</div>
+    <div class="faq-answer">We update our listings regularly to ensure all available properties are current. Sold or rented properties are marked or removed promptly.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Do you provide site visits?</div>
+    <div class="faq-answer">Yes, we arrange site visits to help you explore the property in person. You can book a visit through the contact form or call us directly.</div>
+  </div>
+
+</div>
+
+</body>
+</html>

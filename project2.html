@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAARHOMES - Houses & Rooms for Sale and Rent in Kathmandu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .property-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .property {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .property img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .property h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .property p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .property:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .property {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .property {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>SAARHOMES</h1>
+            <p>Homes & Rooms for Sale and Rent in Kathmandu</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="terms and conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+           <ul>
+           </ul>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to SAARHOMES</h2>
+        <p>Your trusted source for buying, selling, and renting homes and rooms in Kathmandu. Find your dream property today!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About SAARHOMES</h2>
+        <p>SAARHOMES is dedicated to helping individuals and families find their ideal homes in Kathmandu. With a diverse range of properties for sale and rent, we cater to all types of clients—whether you're looking for a spacious family home or a simple room for rent.</p>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties">
+        <h2>Featured Properties</h2>
+        <div class="property-list">
+            <div class="property">
+                <img src="https://via.placeholder.com/500x300" alt="Property 1">
+                <h3>3-Bedroom House for Sale</h3>
+                <p>Location: Kathmandu</p>
+                <p>Price: NPR 15,000,000</p>
+            </div>
+            <div class="property">
+                <img src="https://via.placeholder.com/500x300" alt="Property 2">
+                <h3>1-Bedroom Room for Rent</h3>
+                <p>Location: Kathmandu</p>
+                <p>Rent: NPR 20,000/month</p>
+            </div>
+            <div class="property">
+                <img src="https://via.placeholder.com/500x300" alt="Property 3">
+                <h3>2-Bedroom House for Sale</h3>
+                <p>Location: Kathmandu</p>
+                <p>Price: NPR 10,000,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>Q: How can I buy a property from SAARHOMES?</strong><br>A: You can browse our listings and contact us to schedule a viewing.</li>
+            <li><strong>Q: Do you offer rental properties?</strong><br>A: Yes, we have a variety of rental properties available. Visit our Properties section to see current listings.</li>
+            <li><strong>Q: Can I get a loan for buying a property?</strong><br>A: We can connect you with trusted financial institutions for home loans.</li>
+        </ul>
+    </section>
+
+    <!-- Terms and Conditions Section -->
+    <section id="terms">
+        <h2>Terms & Conditions</h2>
+        <p>Please read and agree to the terms and conditions before using our website. All properties listed are subject to availability, and terms of sale/rent may change based on the current market conditions.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 SAARHOMES. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
